@@ -76,6 +76,13 @@ sb_toggle.addEventListener("click", (e) => {
    sb_toggle.classList.toggle("show");
 });
 
+const sb_link_sb_toggle = document.querySelectorAll('.nav-link').forEach(link => {
+   link.addEventListener("click", e => {
+      sidebar.classList.remove("show");
+      sb_toggle.classList.remove("show");
+   })
+})
+
 // WINDOW EVENTS
 
 window.addEventListener("resize", (e) => {
