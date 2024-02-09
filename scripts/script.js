@@ -83,17 +83,6 @@ const sb_link_sb_toggle = document.querySelectorAll(".nav-link").forEach((link) 
    });
 });
 
-const sb_is_toggled =
-   sidebar.classList.contains("show");
-
-document.querySelector('html').addEventListener("click", (e) => {
-   if (sb_is_toggled == false) {
-      console.log(sb_is_toggled);
-   } else {
-      console.log(`clicked`);
-   }
-});
-
 // WINDOW EVENTS
 
 window.addEventListener("resize", (e) => {
